@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:pref_rule/home.dart';
+import 'package:pref_rule/pages/home.dart';
+import 'package:pref_rule/pages/index_page.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
-import 'onbo.dart';
+import 'pages/onbo.dart';
 
 void main() {
   runApp(const MyApp());
@@ -23,7 +24,7 @@ class _MyAppState extends State<MyApp> {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const SplashPage(),
+      home: const IndexPage(),
     );
   }
 }
